@@ -1,22 +1,22 @@
-name = "katelyatv"
+name = "suntv"
 compatibility_date = "2024-09-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
 # 生产环境配置
 [env.production]
-name = "katelyatv"
+name = "suntv"
 
 # 生产环境 D1 数据库配置
 [[env.production.d1_databases]]
 binding = "DB"
-database_name = "katelyatv-db"
-database_id = "6d580637-1f87-4ddf-8b4d-3d97254b4c33"
+database_name = "tv-db"
+database_id = "91510f97-71f6-4f2c-918d-87c7b64e81e7"
 
 # 生产环境变量
 [env.production.vars]
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
-NEXT_PUBLIC_SITE_NAME = "KatelyaTV"
+NEXT_PUBLIC_SITE_NAME = "sunTV"
 NEXT_PUBLIC_SITE_DESCRIPTION = "高性能影视播放平台"
 NEXTAUTH_URL = "https://your-domain.pages.dev"
 IMAGE_PROXY_ENABLED = "true"
